@@ -7,25 +7,25 @@ import * as IoIcons5 from 'react-icons/io5';
 
 export const SidebarData = [
     {
-        title: 'Plan',
+        title: 'PLAN',
         path: '/',
         icon: <IoIcons5.IoCreateOutline />,
         className: 'nav-text'
     },
     {
-        title: 'Idea List',
+        title: 'IDEA LIST',
         path: '/idealist',
         icon: <AiIcons.AiOutlineBulb />,
         className: 'nav-text'
     },
     {
-        title: 'Calendar',
+        title: 'CALENDAR',
         path: '/calendar',
         icon: <IoIcons5.IoGridOutline />,
         className: 'nav-text'
     },
     {
-        title: 'My Content',
+        title: 'MY CONTENT',
         path: '/mycontent',
         icon: <AiIcons.AiOutlineFile />,
         className: 'nav-text'

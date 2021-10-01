@@ -17,6 +17,7 @@ function Navbar() {
         <>
             <IconContext.Provider value={{color: '#fff'}}>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+                
                 <ul className="nav-menu-items">
                     {SidebarData.map((item, index) => {
                         return (
