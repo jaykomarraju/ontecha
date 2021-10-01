@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import * as BiIcons from 'react-icons/bi';
 import * as GrIcons from 'react-icons/gr';
 import {Link} from 'react-router-dom';
 import {SidebarData} from './SidebarData'
@@ -15,7 +16,7 @@ function Navbar() {
 
     return (
         <>
-            <IconContext.Provider value={{color: '#fff'}}>
+            <IconContext.Provider value={{color: '#0f0f0f'}}>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 
                 <ul className="nav-menu-items">
