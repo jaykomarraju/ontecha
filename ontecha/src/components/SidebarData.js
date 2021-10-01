@@ -2,6 +2,7 @@ import React from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as GrIcons from 'react-icons/gr';
+import * as BiIcons from 'react-icons/bi';
 import * as IoIcons from 'react-icons/io';
 import * as IoIcons5 from 'react-icons/io5';
 
@@ -9,7 +10,7 @@ export const SidebarData = [
     {
         title: 'PLAN',
         path: '/',
-        icon: <IoIcons5.IoCreateOutline />,
+        icon: <BiIcons.BiSliderAlt />,
         className: 'nav-text'
     },
     {
