@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     padding: 0 16px;
-    border-radius: 4px;
+    border-radius: 14px;
 }
 
 .nav-text a:hover{
@@ -47,7 +47,7 @@
 
 .nav-menu-items {
     width: 100%;
-    margin-top: 25vh;
+    margin-top: 27.5vh;
 }
 
 

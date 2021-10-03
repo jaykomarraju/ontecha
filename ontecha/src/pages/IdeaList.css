@@ -1,0 +1,24 @@
+.idealist{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page-title{
+    font-weight: 600;
+    font-size: 2em;
+    padding: 1em;
+    margin-top: 30px;
+    margin-left: 3%;
+}
+
+.container{
+    max-width: 960px;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.firstCreate{
+    display: grid;
+    margin-left: -5%;
+}
