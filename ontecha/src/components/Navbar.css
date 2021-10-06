@@ -31,6 +31,7 @@
 .nav-text a {
     text-decoration: none;
     color: #0f0f0f;
+    font-weight: 400;
     font-size: 18px;
     width:95%;
     height: 100%;

@@ -32,8 +32,9 @@
 
   .note-textbox{
       border: none;
+      margin-top: -20px;
       flex: 1;
-      font-size: 1.2em;
+      font-size: 1em;
       width: calc(100% - 0px);
     box-sizing: border-box;
     ;
@@ -50,4 +51,13 @@
 
   .tag-text-box{
     font-size: 0.8em;
+    text-align: right;
+  }
+
+  .new-note-title-text{
+    margin-top: 15px;
+    padding: 1rem;
+  }
+  .new-note-title{
+    font-size: 1.2em;
   }

@@ -14,7 +14,7 @@ export const SidebarData = [
         className: 'nav-text'
     },
     {
-        title: 'IDEA LIST',
+        title: 'NOTES',
         path: '/idealist',
         icon: <AiIcons.AiOutlineBulb />,
         className: 'nav-text'

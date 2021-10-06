@@ -39,7 +39,7 @@ function IdeaList() {
 
     return (
         <div className="idealist">
-            <div className="page-title">IDEA LIST</div>
+            <div className="page-title">NOTES</div>
             <div className="container">
                 <div className="firstCreate"><CreateNote /></div>
                 

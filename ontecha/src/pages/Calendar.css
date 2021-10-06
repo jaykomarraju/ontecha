@@ -57,3 +57,114 @@ background-color: #222222;
     border-width: 2px;
 
 }
+
+
+#container {
+    width: 770px;
+  }
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: #247BA0;
+  }
+  #weekdays div {
+    width: 100px;
+    padding: 10px;
+  }
+  .calendar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-top: 20px;
+  }
+  .day {
+    width: 12%;
+    padding: 1.5%;
+    padding-top: 5%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .day:hover {
+    background-color: #79e497;
+  }
+  
+  .day + .currentDay {
+    color:rgba(24, 178, 224, 0.808);
+    border-style: solid;
+    border-width: thin; 
+    font-weight: 600;
+  }
+
+  .day + .currentDay:hover {
+    color:#fff;
+    background-color: rgba(24, 178, 224, 0.808);
+    border-style: solid;
+    border-color: rgba(24, 178, 224, 0.808);
+    border-width: thin;
+    font-weight: 600;
+    outline-offset: -30px;
+  }
+  .event {
+    font-size: 10px;
+    padding: 3px;
+    background-color: #58bae4;
+    color: white;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: #ededed !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    z-index: 20;
+    padding: 25px;
+    background-color: #e8f4fa;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton {
+    background-color: #92a1d1;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }

@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Arvo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
 
-.mycontent, .plan{
+.plan{
   display: flex;
   height: 100vh;
   margin-left: 250px;
@@ -19,7 +20,7 @@
   background-color: #EDEDED;
 }
 
-.idealist, .calendar{
+.mycontent, .idealist, .calendarPage{
   display: flex;
   padding-left: 250px;
   min-height: 100vh;
@@ -28,4 +29,8 @@
   background-color: #EDEDED;
   width: 100%;
   padding-bottom: 50px;
+}
+
+.calendarPage{
+  flex-direction: column;
 }

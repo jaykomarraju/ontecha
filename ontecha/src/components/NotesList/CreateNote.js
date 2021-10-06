@@ -9,13 +9,16 @@ export class CreateNote extends Component {
             <div className="note new">
             
             <div className="note-header">
-                <div className="note-title">Create a new idea.</div>
+                <div className="note-title">CAPTURE YOUR IDEA</div>
                 <div className="note-tags">
                     {/* <span> </span>
                     <span> </span>
                     <span> </span> */}
                     <textarea className="tag-text-box" rows="1" placeholder="Enter relevant tags"></textarea>
                 </div>
+            </div>
+            <div className="new-note-title-text">
+                <textarea className="new-note-title" rows="1" placeholder="Title"></textarea>
             </div>
             <div className="note-text">
                 <textarea className="note-textbox" rows="5" placeholder="Enter your new idea here..."></textarea>
