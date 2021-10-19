@@ -77,9 +77,7 @@ function Calendar() {
     return (
         <div className="calendarPage">
             <div className="container">
-            <div className="calendar-footer">
-                <CalendarFooter />
-            </div>
+            
                 <CalendarHeader 
                     dateDisplay={dateDisplay}
                     onNext = {() => setNav(nav + 1)} 
@@ -98,6 +96,9 @@ function Calendar() {
                         }}
                     />
                 ))}
+                <div className="calendar-footer">
+                <CalendarFooter />
+            </div>
             </div>
             
         </div>
