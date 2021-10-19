@@ -14,6 +14,7 @@ function MyContent() {
             </div>
             <div className='container'>
                 <FilesView />
+                <FilesView />
             </div>
         </div>
     )

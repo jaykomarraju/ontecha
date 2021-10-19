@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import CalendarFooter from '../components/CalendarView/CalendarFooter';
 import CalendarHeader from '../components/CalendarView/CalendarHeader';
 import Day from '../components/CalendarView/Day';
 import './Calendar.css'
@@ -76,6 +77,9 @@ function Calendar() {
     return (
         <div className="calendarPage">
             <div className="container">
+            <div className="calendar-footer">
+                <CalendarFooter />
+            </div>
                 <CalendarHeader 
                     dateDisplay={dateDisplay}
                     onNext = {() => setNav(nav + 1)} 
@@ -95,6 +99,7 @@ function Calendar() {
                     />
                 ))}
             </div>
+            
         </div>
     )
 }

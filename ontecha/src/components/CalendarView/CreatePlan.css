@@ -1,0 +1,23 @@
+label{
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.create-plan-heading{
+    font-size: 1.2em;
+    padding: 5px 0px 20px 0px;
+    font-weight: 600;
+}
+
+.textBox {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0; 
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    font-size: 1em;
+    transition: .3s ease;
+    margin: 10px 0px 20px 0px;
+    padding: 5px 0px 5px 0px;
+  }

@@ -7,12 +7,7 @@ import * as IoIcons from 'react-icons/io';
 import * as IoIcons5 from 'react-icons/io5';
 
 export const SidebarData = [
-    {
-        title: 'PLAN',
-        path: '/',
-        icon: <BiIcons.BiSliderAlt />,
-        className: 'nav-text'
-    },
+    
     {
         title: 'NOTES',
         path: '/idealist',
@@ -21,7 +16,7 @@ export const SidebarData = [
     },
     {
         title: 'CALENDAR',
-        path: '/calendar',
+        path: '/',
         icon: <IoIcons5.IoGridOutline />,
         className: 'nav-text'
     },

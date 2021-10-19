@@ -1,0 +1,52 @@
+.display-box{
+    /* TRouBLe */
+    padding: 15px 15px 15px 15px;
+    background-color: #fff;
+    width: 35%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.file-display-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.file-display-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.file-display-thumbnail{
+    padding-left: 2.5%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+
+img{
+    width: 95%;
+    height: 10em;
+}
+
+.file-display-title{
+    font-size: 0.7em;
+}
+
+.file-display-tags{
+    font-size: 0.7em;
+    padding: 1px 7px 1px 7px;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-top: -1px;
+}
+
+.file-display-tags:hover{
+    background-color: rgb(32, 32, 32);
+    color:#ededed;  
+}
+
+.file-display-footer{
+    font-size: 0.8em;
+}

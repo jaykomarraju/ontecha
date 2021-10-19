@@ -1,0 +1,6 @@
+.bottom-buttons{
+    display: flex;
+    flex-direction: row;
+    padding-left: auto;
+    padding-right: auto;
+}
