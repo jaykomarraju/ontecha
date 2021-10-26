@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom';
 import CalendarFooter from '../components/CalendarView/CalendarFooter';
 import CalendarHeader from '../components/CalendarView/CalendarHeader';
 import Day from '../components/CalendarView/Day';
 import './Calendar.css'
+
 
 function Calendar() {
 
@@ -86,6 +88,7 @@ function Calendar() {
             </div>
             <div className='calendar'>
                 {days.map((d, index) => (
+                    
                     <Day 
                         key={index}
                         day={d}

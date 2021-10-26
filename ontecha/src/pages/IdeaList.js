@@ -9,9 +9,9 @@ function IdeaList() {
     const [notes, setNotes] = useState([
         {
         id: nanoid(),
-        title: "Title 1",
-        tags: ["Youtube", "Story"],
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        title: "Puerto Rico",
+        tags: ["Instagram", "IGTV"],
+        text: "Shoot a video when you go to Puerto Rico. You get a cool af location for no extra cost!!",
         contentDay: "05/10/2021"
     },
     {

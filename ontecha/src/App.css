@@ -20,7 +20,7 @@
   background-color: #EDEDED;
 }
 
-.mycontent, .idealist, .calendarPage{
+.mycontent, .idealist, .calendarPage, .dayPage{
   display: flex;
   padding-left: 250px;
   min-height: 100vh;
