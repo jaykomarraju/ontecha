@@ -100,7 +100,7 @@ function Calendar() {
                     />
                 ))}
                 <div className="calendar-footer">
-                <CalendarFooter />
+                {/* <CalendarFooter /> */}
             </div>
             </div>
             
