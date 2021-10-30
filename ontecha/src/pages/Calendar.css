@@ -175,9 +175,3 @@ background-color: #222222;
     align-items: center;
     justify-content: center;
   }
-
-  a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-    all: unset;
-  }
