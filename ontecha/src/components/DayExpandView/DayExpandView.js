@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import Item from '../../components/DayExpandView/Item'
-import DropWrapper from '../../components/DayExpandView/DropWrapper'
-import Col from '../../components/DayExpandView/Col'
-import {data, statuses} from "../../data/dayIndex"
+import Item from '../components/DayExpandView/Item'
+import DropWrapper from '../components/DayExpandView/DropWrapper'
+import Col from '../components/DayExpandView/Col'
+import {data, statuses} from "../data/dayIndex"
 
 const DayExpandView = () => {
-    const [items, setItems] = useState(data);
+    const [item, setItems] = useState(data);
 
     const onDrop = (item, monitor, status) => {
         const mapping = statuses.find(si => si.status === status);
 
         setItems(prevState =>{
-            const newItems = prevState
+            newItems = prevState
                 .filter(i => i.id !== item.id)
                 .concat({ ...item, status, icon: mapping.icon});
 
@@ -32,9 +32,7 @@ const DayExpandView = () => {
         <div className={'row'}>
             {statuses.map(s=>{
                 return(
-
-                    // <div key={status} className="col-wrapper">
-                    <div className="col-wrapper">
+                    <div key={status} className="col-wrapper">
                         <h2 className="col-header">{s.status.toUpperCase()}</h2>
                         <DropWrapper onDrop={onDrop} status={s.status}>
                             <Col>
