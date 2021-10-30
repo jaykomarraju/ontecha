@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import {Form, ModalBody, ModalFooter} from 'react-bootstrap'
-
+import { Button } from '@material-ui/core';
 import {db} from '../../firebase';
 import 'firebase/firestore';
 import {doc, updateDoc} from 'firebase/firestore';

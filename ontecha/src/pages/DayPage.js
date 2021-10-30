@@ -18,7 +18,7 @@ const DayPage = () => {
                         WhatUP!~
                     </h1>
 
-                    {/* <DayExpandView /> */}
+                    <DayExpandView />
                 </div>
             </DndProvider>
         )

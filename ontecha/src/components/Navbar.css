@@ -6,16 +6,12 @@
 .nav-menu{
     background-color: #fff;
     width: 250px;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
     transition: 850ms;
-    /* TRouBLe */
-    margin: 20px 20px 20px 20px;
-    border-radius: 20px
-    ;
 }
 
 .nav-menu.active{
