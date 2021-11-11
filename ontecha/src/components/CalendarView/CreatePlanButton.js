@@ -1,36 +1,17 @@
-import React, {useState} from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
+import { useState } from "react";
+import react from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
-import './CreatePlan.css'
 
 
-function getModalStyle() {
-    return {
-        top: `50%`,
-        left: `50%`,
-        transform: `translate(-50%, -50%)`,
-    }
-}
+export const CreatePlanButton = () => {
+    const [show, setShow] = useState(false);
 
-const useStyles = makeStyles((theme) => ({
-    paper: {
-        position: 'absolute',
-        width: '40%',
-        backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
-        borderRadius:'20px',
-        boxShadow: theme.shadows[5],
-        padding: theme.spacing(2,4,3)
-    },
-}));
-
-export const NewUploadCycleButton = () => {
-
-    const classes = useStyles();
-    const [modalStyle] = useState(getModalStyle);
-    const [open, setOpen] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleOpen = () => setShow(true);
 
     const [ uploadFrequencyValue, setUploadFrequencyValue] = useState(0); 
     const [ batchSizeValue, setBatchSizeValue] = useState(0); 
@@ -38,29 +19,16 @@ export const NewUploadCycleButton = () => {
     const [ timeLengthValue, setTimeLengthValue] = useState(0); 
     const [ colorValue, setColorValue] = useState('#a25bbb'); 
 
-    const handleOpen = () => {
-        setOpen(true);
-    }
-    
-    const handleClose = () => {
-        setOpen(false);
-    }
-
-
     return (
-        <div>
-            <button className="button-green" onClick={handleOpen}>CREATE NEW UPLOAD CYCLE</button>
+        <>
+            <Button variant='outline-primary' onClick={handleOpen}>Create a Plan</Button>
 
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="simple-modal-title"
-                aria-describedby = "simple-modal-description"
-            >
-                <div style={modalStyle} className={classes.paper}>
-                    <p className="create-plan-heading">CREATE A NEW UPLOAD CYCLE</p>
-                    
-                    <div class="slidecontainer">
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>CREATE A NEW UPLOAD CYCLE</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="modalBody">
+                <div class="slidecontainer">
                         <label className="whatsup">How many times do you want to upload per month?</label>
                         <RangeSlider
                         value={uploadFrequencyValue}
@@ -99,14 +67,18 @@ export const NewUploadCycleButton = () => {
                         <label>Choose color: </label>
                         <input type="color"/>
                     </div>
-                                <button className="button-green" onClick={handleClose}>CREATE</button>
-                                <button className="button-red" onClick={handleClose}>CANCEL</button>
-                           
-                    
-                </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Create Plan
+                    </Button>
+                </Modal.Footer>
             </Modal>
-        </div>
-    )
+        </>
+    );
 }
 
-export default NewUploadCycleButton
+export default CreatePlanButton;

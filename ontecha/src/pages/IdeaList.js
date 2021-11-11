@@ -31,7 +31,7 @@ function IdeaList() {
     {
         id: nanoid(),
         title: "Title 4",
-        tags: ["Random", "Timepass Test Case Shit"],
+        tags: ["Random", "Timepass Text Case Shit"],
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         contentDay: "04/08/2022"
     }

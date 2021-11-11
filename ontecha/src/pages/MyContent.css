@@ -32,7 +32,7 @@
     justify-content: center;
 } */
 
-.button-white, .button-green, .button-red, .button-orange, .button-purple{
+.button-white{
     background-color: transparent;
     padding: 0;
     border: 0;
@@ -62,49 +62,8 @@
     background-color: #000;
 }
 
-.button-red:hover{
-    color:#ededed;
-    background-color: rgb(177, 10, 10);
-}
-.button-green:hover{
-    color:#ededed;
-    background-color: rgb(8, 114, 48);
-}
-
-.button-orange:hover{
-    color:#ededed;
-    background-color: rgb(177, 118, 10);
-}
-.button-purple:hover{
-    color:#ededed;
-    background-color: rgb(96, 8, 114);
-}
-
 .container{
     max-width: 960px;
     margin-right: 8%;
     margin-left: 8%;
-}
-
-.create-folder-modal-footer{
-    display: flex;
-    flex-direction: row;
-}
-
-.modal-form-label{
-    /* TRouBLe */
-}
-
-.new-note-title{
-    margin-top: 20px;
-    /* border: 2px solid rgb(92, 92, 92); */
-    padding: 4px 4px 4px 0px;
-    /* border-radius: 20px; */
-    border: none;
-}
-
-.file-select-heading{
-    margin-bottom: 20px;
-    font-weight: 400;
-    margin-top: 10px;
 }

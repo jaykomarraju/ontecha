@@ -3,6 +3,25 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.calendarFooter{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.calendarFooter Button{
+  margin: 0px 10px 0px 10px;
+}
+
+.modalBody{
+  padding: 20px;
+}
+
+.modalBody div{
+  padding: 10px;
+}
+
 .header{
     background-color: #fff;
     flex-direction: column;
@@ -147,6 +166,7 @@ background-color: #222222;
     border: none;
     box-shadow: 0px 0px 3px gray;
   }
+
   #eventTitleInput.error {
     border: 2px solid red;
   }
@@ -167,11 +187,4 @@ background-color: #222222;
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
-  }
-
-  .calendar-footer{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
   }

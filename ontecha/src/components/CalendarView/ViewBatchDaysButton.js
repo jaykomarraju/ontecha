@@ -1,11 +1,15 @@
-import React from 'react'
+import { useState } from "react";
+import react from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 export const ViewBatchDaysButton = () => {
+
     return (
-        <div>
-            <button className="button-purple">VIEW BATCH DAYS</button>
-        </div>
-    )
+        <>
+            <Button variant='outline-primary'>View Batch Days</Button>
+        </>
+    );
 }
 
-export default ViewBatchDaysButton
+export default ViewBatchDaysButton;
