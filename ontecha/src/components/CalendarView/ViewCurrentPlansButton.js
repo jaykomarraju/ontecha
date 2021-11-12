@@ -7,7 +7,7 @@ export const ViewCurrentPlansButton = () => {
 
     return (
         <>
-            <Button variant='outline-primary'>View Current Upload Cycles</Button>
+            <Button variant='outline-secondary'>View Current Upload Cycles</Button>
         </>
     );
 }

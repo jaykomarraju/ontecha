@@ -25,5 +25,11 @@ export const SidebarData = [
         path: '/mycontent',
         icon: <AiIcons.AiOutlineFile />,
         className: 'nav-text'
+    },
+    {
+        title: 'DEV',
+        path: '/dev',
+        icon: <AiIcons.AiOutlineFile />,
+        className: 'nav-text'
     }
 ]

@@ -7,7 +7,7 @@ export const ViewBatchDaysButton = () => {
 
     return (
         <>
-            <Button variant='outline-primary'>View Batch Days</Button>
+            <Button variant='outline-secondary'>View Batch Days</Button>
         </>
     );
 }

@@ -21,7 +21,7 @@ export const CreatePlanButton = () => {
 
     return (
         <>
-            <Button variant='outline-primary' onClick={handleOpen}>Create a Plan</Button>
+            <Button variant='outline-secondary' onClick={handleOpen}>Create a Plan</Button>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -72,7 +72,7 @@ export const CreatePlanButton = () => {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button variant="outline-secondary" onClick={handleClose}>
                         Create Plan
                     </Button>
                 </Modal.Footer>
