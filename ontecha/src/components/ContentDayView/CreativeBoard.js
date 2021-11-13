@@ -3,7 +3,11 @@ import react from 'react'
 export const CreativeBoard = () => {
     return(
         <div>
-            <h3>CREATIVE BOARD</h3>
+            <p className='boardHeading'>CREATIVE BOARD</p>
+            <p className='boardSubHeading'>JANUARY 19TH, 2022</p>
+            <div className="whiteBoard">
+                
+            </div>
         </div>
     )
 }

@@ -10,6 +10,7 @@
     border: 3px solid black;
     margin: 2%;
     border-radius: 20px;
+    text-align: center;
 }
 
 .creativeBoard{
@@ -24,3 +25,42 @@ width: 22%;
 width: 22%
 }
 
+.boardHeading{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.boardSubHeading{
+    margin-top: -15px;
+}
+
+.whiteBoard{
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    height: 65vh;
+    border-radius: 20px;
+}
+
+.notesBoard, .contentBoard{
+    overflow: auto;
+}
+
+.content-title{
+    font-weight: 600;
+}
+
+.thumbnail-white{
+    margin-top: -10px;
+    width:100%;
+    height:15vh;
+    background-color: #ededed;
+    border-radius: 10px;
+}
+
+.file{
+    background-color: white;
+    padding: 10%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}

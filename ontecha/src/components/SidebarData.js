@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as GrIcons from 'react-icons/gr';
 import * as BiIcons from 'react-icons/bi';
 import * as IoIcons from 'react-icons/io';
+import * as MdIcons from 'react-icons/md';
 import * as IoIcons5 from 'react-icons/io5';
 
 export const SidebarData = [
@@ -29,7 +30,7 @@ export const SidebarData = [
     {
         title: 'DEV',
         path: '/dev',
-        icon: <AiIcons.AiOutlineFile />,
+        icon: <MdIcons.MdDesignServices />,
         className: 'nav-text'
     }
 ]
